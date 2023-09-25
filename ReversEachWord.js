@@ -1,6 +1,6 @@
 // Reverse each word in a given string
-// Input: "Welcome to this Javascript Guide!"
-// Output: "emocleW ot siht tpircsavaJ !ediuG"
+// Input: "This is a sunny day"
+// Output: "sihT si a ynnus yad"
 
 /**
  * @param {*} str 
@@ -15,7 +15,7 @@ function reverseEachWord(str) {
     }
     return result.join(' ');
     }
-console.log(reverseEachWord('Welcome to this Javascript Guide!'));
+console.log(reverseEachWord('This is a sunny day'));
 
 
 function reverseSort(arr)
