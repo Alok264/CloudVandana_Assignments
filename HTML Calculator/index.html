@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Calculator</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <form name="calculator">
+            <table>
+                <tr>
+                    <td colspan="3" style="width:75%;">
+                        <input type="text" name="display" id="display" placeholder="0" autocomplete="off">
+                    </td>
+                    <td>
+                        <input type="button" name="clear" value="AC" onclick="ACButtonClicked()">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="one" value="1" onclick="Operand(value)"></td>
+                    <td><input type="button" name="two" value="2" onclick="Operand(value)"></td>
+                    <td><input type="button" name="three" value="3" onclick="Operand(value)"></td>
+                    <td><input type="button" name="plus" value="+" onclick="Operator(value)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="four" value="4" onclick="Operand(value)"></td>
+                    <td><input type="button" name="five" value="5" onclick="Operand(value)"></td>
+                    <td><input type="button" name="six" value="6" onclick="Operand(value)"></td>
+                    <td><input type="button" name="minus" value="-" onclick="Operator(value)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="seven" value="7" onclick="Operand(value)"></td>
+                    <td><input type="button" name="eight" value="8" onclick="Operand(value)"></td>
+                    <td><input type="button" name="nine" value="9" onclick="Operand(value)"></td>
+                    <td><input type="button" name="multiply" value="*" onclick="Operator(value)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="." value="." onclick="Operator(value)"></td>
+                    <td><input type="button" name="zero" value="0" onclick="Operand(value)"></td>
+                    <td><input type="button" name="equal" value="="
+                            onclick="calculator.display.value = eval(calculator.display.value)"></td>
+                    <td><input type="button" name="divide" value="/" onclick="Operator(value)"></td>
+                </tr>
+            </table>
+        </form>
+        <div class="mode">
+            <input type="button" name="mode" id="mode" value="🔆" onclick="changeMode()">
+        </div>
+        <script src="app.js" ></script>       
+    </body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form id="surveyForm">
+    <div class="form_element mode">
+        <input type="button" name="mode" id="mode" value="🌙" onclick="changeMode()">
+    </div>
+    <div class="form_element">
+      <label for="firstName">First Name: -<span>*</span></label>
+      <input type="text" id="firstName" required />
+    </div>
+    <div class="form_element">
+      <label for="lastName">Last Name: -<span>*</span></label>
+      <input type="text" id="lastName" required />
+    </div>
+    <div class="form_element">
+      <label for="dob">Date of Birth: -<span>*</span></label>
+      <input type="date" id="dob" required />
+    </div>
+    <div class="form_element">
+      <label for="country">Country: -<span>*</span></label>
+      <select id="country" name="country" required>
+        <option value="Afghanistan" label="Afghanistan" name="country"></option>
+        <option value="Argentina" label="Argentina" name="country"></option>
+        <option value="Australia" label="Australia" name="country"></option>
+        <option value="Bangladesh" label="Bangladesh" name="country"></option>
+        <option value="Bhutan" label="Bhutan" name="country"></option>
+        <option value="Brazil" label="Brazil" name="country"></option>
+        <option value="Canada" label="Canada" name="country"></option>
+        <option value="China" label="China" name="country"></option>
+        <option value="Egypt" label="Egypt" name="country"></option>
+        <option value="Ethiopia" label="Ethiopia" name="country"></option>
+        <option value="France" label="France" name="country"></option>
+        <option value="Germany" label="Germany" name="country"></option>
+        <option value="Hong Kong" label="Hong Kong" name="country"></option>
+        <option value="India" label="India", name='country'></option>
+        <option value="Indonesia" label="Indonesia" name="country"></option>
+        <option value="Iran" label="Iran" name="country"></option>
+        <option value="Iraq" label="Iraq" name="country"></option>
+        <option value="Italy" label="Italy" name="country"></option>
+        <option value="Japan" label="Japan" name="country"></option>
+        <option value="Kenya" label="Kenya" name="country"></option>
+        <option value="Mexico" label="Mexico" name="country"></option>
+        <option value="Nigeria" label="Nigeria" name="country"></option>
+        <option value="Pakistan" label="Pakistan" name="country"></option>
+        <option value="Philippines" label="Philippines" name="country"></option>
+        <option value="Russia" label="Russia" name="country"></option>
+        <option value="Saudi Arabia" label="Saudi Arabia" name="country"></option>
+        <option value="Singapore" label="Singapore" name="country"></option>
+        <option value="South Africa" label="South Africa" name="country"></option>
+        <option value="Spain" label="Spain" name="country"></option>
+        <option value="Sri Lanka" label="Sri Lanka" name="country"></option>
+        <option value="Syria" label="Syria" name="country"></option>
+        <option value="Taiwan" label="Taiwan" name="country"></option>
+        <option value="Thailand" label="Thailand" name="country"></option>
+        <option value="UAE" label="UAE" name="country"></option>
+        <option value="UK" label="UK" name="country"></option>
+        <option value="USA" label="USA" name="country"></option>
+      </select>
+    </div>
+    <div class="form_element gender">
+      <label>Gender: -<span>*</span></label>
+      <input type="radio" id="male" name="gender" value="Male" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="Female" />
+      <label for="female">Female</label>
+    </div>
+    <div class="form_element">
+      <label for="profession">Profession: -<span>*</span></label>
+      <input type="text" id="profession" required />
+    </div>
+    <div class="form_element">
+      <label for="email">Email: -<span>*</span></label>
+      <input type="email" id="email" required />
+    </div>
+    <div class="form_element">
+      <label for="mobile">Mobile Number: -<span>*</span></label>
+      <input type="tel" id="mobile" required />
+    </div>
+    <div class="form_element buttons">
+      <button type="button" onclick="submitForm()">Submit</button>
+      <button type="reset" onclick="resetForm()">Reset</button>
+    </div>
+  </form>
+
+    <script src="app.js"></script>
+  </body>
+</html>
